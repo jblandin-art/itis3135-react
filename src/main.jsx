@@ -10,7 +10,7 @@ import Layout from "./Layout.jsx"
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <HashRouter basename="/itis3135-react/">
+    <HashRouter>
     <Routes>
       <Route path="/" element={<Layout />}>
       <Route index element={<App />}/>
