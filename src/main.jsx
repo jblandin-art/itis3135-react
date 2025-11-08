@@ -3,7 +3,8 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import { BrowserRouter, Routes, Route} from "react-router";
-import Bravo from "./Bravo.jsx"
+import Introduction from "./Introduction.jsx"
+import Contract from "./Contract.jsx"
 import Layout from "./Layout.jsx"
 
 
@@ -13,7 +14,8 @@ createRoot(document.getElementById('root')).render(
     <Routes>
       <Route path="/" element={<Layout />}>
       <Route index element={<App />}/>
-      <Route path="/bravo" element={<Bravo />}/>
+      <Route path="/introduction" element={<Introduction />}/>
+      <Route path="/contract" element={<Contract />}/>
       </Route>
     </Routes>
     </BrowserRouter>

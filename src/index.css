@@ -1,68 +1,422 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+       html {
+         overflow-y: scroll;
+       }
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+       main {
+         max-width: 800px;
+         width: 90%;
+         margin: 0 auto;
+         background-color: #FEFEFE;
+         flex: 1;
+       }
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+       body {
+         font-family: Garamond, sans-serif;
+         color: #010101;
+         /*directions say no black or white so I go as close as possible*/
+         margin: 0;
+         padding: 0;
+         background-color: #FEFEFE;
+         display: flex;
+         flex-direction: column;
+         min-height: 100vh;
+       }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
+       header,
+       footer {
+         background-color: #EEE0CB;
+         color: #BAA898;
+         padding: 10px 0;
+         text-align: center;
+       }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
+       a {
+         color: brown;
+         margin: 0 15px;
+         text-decoration: none;
+       }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
+       .secondary-nav {
+         font-size: 0.85rem;
+         color: #999;
+         text-align: center;
+       }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
+       .secondary-nav a {
+         color: #777;
+         text-decoration: none;
+         margin: 0 10px;
+         font-style: italic;
+       }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
+       .secondary-nav a:hover {
+         text-decoration: underline;
+         color: #555;
+       }
+
+       h1 {
+         font-family: georgia, serif;
+         margin: 0;
+         font-variant-numeric: lining-nums;
+       }
+
+       h2 {
+         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+         margin: 20px;
+       }
+
+       footer p {
+         margin: 10px 0 0 0;
+       }
+
+       footer a img {
+         vertical-align: middle;
+         margin-left: 10px;
+       }
+
+       .designed-by {
+         font-size: 0.8rem;
+         color: #666;
+         margin: 5px 0 0 0;
+       }
+
+       img {
+         max-width: 40%;
+         height: auto;
+       }
+
+       .bold {
+         font-weight: bold;
+       }
+
+       h3 {
+         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+         margin-bottom: 0em;
+         font-weight: 100;
+         color: #b7b7b7d5
+       }
+
+       p {
+         line-height: 1.6;
+         margin-top: 0em;
+       }
+
+       body a {
+         margin-bottom: 0em;
+       }
+
+       .list-header {
+         font-weight: 525;
+         font-size: 1.2rem;
+         margin-bottom: 2em;
+       }
+
+       table {
+         width: 100%;
+         border-collapse: collapse;
+         margin: 2em 0;
+         font-family: 'Trebuchet MS', sans-serif;
+         background-color: #FEFEFE;
+       }
+
+       caption {
+         caption-side: top;
+         font-weight: bold;
+         font-size: 1.2rem;
+         margin-bottom: 1em;
+         text-align: center;
+       }
+
+       thead th {
+         background-color: #EEE0CB;
+         color: #BAA898;
+         padding: 10px;
+         text-align: left;
+         border: 1px solid #BAA898;
+       }
+
+       tbody td {
+         border: 1px solid #BAA898;
+         padding: 8px;
+         vertical-align: top;
+         word-wrap: break-word;
+       }
+
+       tbody tr:nth-child(even) {
+         background-color: #FFF9F0;
+       }
+
+       tbody tr:hover {
+         background-color: #FFF1E0;
+       }
+
+       td,
+       th {
+         line-height: 1.4;
+       }
+
+       input,
+       textarea {
+         display: block;
+         width: 100%;
+         box-sizing: border-box;
+         margin: 5px 0;
+       }
+
+       textarea {
+         resize: none;
+         overflow-y: scroll;
+       }
+
+       label {
+         font-weight: bold;
+         font-size: 1.2 rem;
+         display: block;
+       }
+
+       .why-take-class {
+
+         margin: 10px 0;
+         font-weight: normal;
+         font-size: 1rem;
+       }
+
+       figcaption {
+         font-size: 1.2rem;
+         font-weight: bold;
+       }
+
+       #buttons {
+         display: flex;
+         justify-content: center;
+         gap: 5em;
+       }
+
+       #add-class {
+         display: block;
+         margin: 0 auto;
+       }
+
+       [hidden] {
+         display: none !important;
+       }
+
+       #fill-out-again {
+         display: block;
+         margin: 25px auto;
+       }
+
+       #divider-input {
+         width: 5%;
+         text-align: center;
+       }
+
+       blockquote {
+         max-width: 700px;
+         /* make it narrower than the container */
+         margin: 1.2em auto;
+         /* top/bottom 1.2em, left/right auto = centered */
+         padding: 1em 1.2em;
+         font-style: italic;
+         border-left: 4px solid #DDD;
+         background: #FFF8F0;
+       }
+
+       blockquote cite {
+         display: block;
+         /* put the author on its own line */
+         margin-top: 0.6em;
+         text-align: right;
+         /* align the author to the right of the blockquote */
+         font-style: normal;
+         color: #666;
+         font-size: 0.95rem;
+       }
+
+       button {
+         background-color: #BAA898;
+         /* warm brownish tone */
+         color: #FEFEFE;
+         /* light text for contrast */
+         border: 2px solid #EEE0CB;
+         /* subtle border */
+         border-radius: 12px;
+         /* rounded corners for soft look */
+         padding: 0.6em 1.2em;
+         /* comfortable click area */
+         margin-bottom: 20px;
+         margin-top: 20px;
+         font-family: 'Trebuchet MS', sans-serif;
+         font-size: 1rem;
+         font-weight: bold;
+         cursor: pointer;
+         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+         /* soft shadow */
+         transition: all 0.2s ease-in-out;
+         display: inline-block;
+         text-align: center;
+       }
+
+       button:hover {
+         background-color: #EEE0CB;
+         /* lighter on hover */
+         color: #BAA898;
+         /* swap text color for contrast */
+         transform: translateY(-2px);
+         /* subtle lift effect */
+         box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+       }
+
+       button:active {
+         transform: translateY(0);
+         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+       }
+
+       /* Hide the actual file input */
+       input[type="file"] {
+         display: none;
+       }
+
+       /* Style the label to look like a button */
+       .file-label {
+         background-color: #BAA898;
+         /* warm brown */
+         color: #FEFEFE;
+         /* light text */
+         border: 2px solid #EEE0CB;
+         /* subtle border */
+         border-radius: 12px;
+         padding: 0.6em 1.2em;
+         font-family: 'Trebuchet MS', sans-serif;
+         font-size: 1rem;
+         font-weight: bold;
+         cursor: pointer;
+         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+         display: inline-block;
+         text-align: center;
+         transition: all 0.2s ease-in-out;
+       }
+
+       /* Hover effect */
+       .file-label:hover {
+         background-color: #EEE0CB;
+         color: #BAA898;
+         transform: translateY(-2px);
+         box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+       }
+
+       /* Active state when clicked */
+       .file-label:active {
+         transform: translateY(0);
+         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+       }
+
+       pre {
+         padding: 1em;
+         border-radius: 8px;
+         font-family: "Fira Code", monospace;
+         overflow-x: auto;
+         line-height: 1.4;
+         white-space: pre-wrap;
+         /* wrap lines but preserve newlines */
+         word-break: break-word;
+         /* break long words if needed */
+         overflow-x: hidden;
+         /* no horizontal scroll */
+       }
+
+       iframe {
+         border: 0;
+       }
+
+       h4 {
+         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+         color: #BAA898;
+         /* matches header/footer text tone */
+         margin-top: 2em;
+         margin-bottom: 0.5em;
+         font-weight: bold;
+         font-size: 1.3rem;
+       }
+
+
+
+
+
+       /* ================== Media Queries ================== */
+
+       /*Tablet (max-width: 1024px)*/
+       @media (min-width: 769px) and (max-width: 1024px) {
+
+         header,
+         footer {
+
+           padding: 15px;
+         }
+
+         p {
+           font-size: 1.9rem;
+         }
+
+         nav a {
+           display: inline-block;
+           margin: 10px;
+           font-size: 2rem;
+         }
+
+         footer a {
+           font-size: 2rem;
+         }
+
+         main {
+           width: 95%;
+           margin: 0 auto;
+         }
+
+         h1 {
+           font-size: 1.8rem;
+         }
+
+         h2 {
+           font-size: 1.4rem;
+         }
+       }
+
+
+       /* Phone (max-width: 768px) */
+       @media (max-width: 768px) {
+
+         html {
+           overflow-x: hidden;
+         }
+
+         main {
+           width: 90%;
+           margin: 0 auto;
+         }
+
+         h2 {
+           text-align: center;
+         }
+
+         h1 {
+           font-size: 1.1rem;
+           /* overrides any tablet h1 size */
+         }
+
+         /* override any tablet nav styles */
+         nav:first-of-type a {
+           margin: 8px 0;
+         }
+
+         /* secondary nav adjustments */
+         .secondary-nav {
+           font-size: 0.85rem;
+           margin-top: 0;
+           padding-top: 0;
+         }
+
+         p {
+           font-size: 1.6rem;
+         }
+       }
