@@ -1,0 +1,5 @@
+<script>
+  // redirect to index.html while keeping the path for BrowserRouter
+  const pathname = window.location.pathname;
+  window.location.replace(`${pathname.replace(/^\/itis3135-react/, '/itis3135-react/')}#${pathname}`);
+</script>
