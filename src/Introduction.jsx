@@ -1,6 +1,14 @@
 import pictureofme from "./assets/pictureofme.jpg";
 import { Helmet } from "react-helmet-async";
+import { useEffect } from "react";
 export default function Introduction(){
+
+
+useEffect(() => {
+    // Set document title as a fallback
+    document.title = "ITIS3135 | Josiah Blanding's | Jagged Bat | Introduction";
+  }, []); // empty dependency → runs once on mount
+
     return(
         <>
 
