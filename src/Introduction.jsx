@@ -1,7 +1,13 @@
 import pictureofme from "./assets/pictureofme.jpg";
-
+import { Helmet } from "react-helmet-async";
 export default function Introduction(){
     return(
+        <>
+
+        <Helmet>
+            <title>ITIS3135 | Josiah Blanding's | Jagged Bat | Introduction</title> 
+            </Helmet>
+        
         <main>
             <h2>Introduction</h2>
             <figure>
@@ -37,5 +43,6 @@ export default function Introduction(){
             </blockquote>
             
         </main>
+        </>
     )
 }

@@ -1,5 +1,13 @@
+import { Helmet } from "react-helmet-async";
 export default function Introduction(){
     return(
+        <>
+
+        <Helmet>
+            <title>ITIS3135 | Josiah Blanding's | Jagged Bat | Contract</title> 
+            </Helmet>
+
+
         <main>
             <h2>Contract</h2>
             <p>I, Josiah Q. Blanding agree to abide by the terms in my Fall 2025 3135 053 Front-End Web Application Development with my instructor, D.I. von Briesen.
@@ -14,5 +22,6 @@ export default function Introduction(){
                  credit (i.e. external libraries) and never from my classmates. </p>
                  <p>Signed: Josiah Q. Blanding – August 29, 2025</p>
         </main>
+        </>
     )
 }
