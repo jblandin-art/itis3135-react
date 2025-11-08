@@ -10,7 +10,7 @@ import Layout from "./Layout.jsx"
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/itis3135-react/">
     <Routes>
       <Route path="/" element={<Layout />}>
       <Route index element={<App />}/>
