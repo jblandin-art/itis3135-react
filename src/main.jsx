@@ -10,7 +10,7 @@ import Layout from "./Layout.jsx"
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <HashRouter>
+    <BrowserRouter>
     <Routes>
       <Route path="/" element={<Layout />}>
       <Route index element={<App />}/>
@@ -18,7 +18,7 @@ createRoot(document.getElementById('root')).render(
       <Route path="/contract" element={<Contract />}/>
       </Route>
     </Routes>
-    </HashRouter>
+    </BrowserRouter>
     
   </StrictMode>
 )
