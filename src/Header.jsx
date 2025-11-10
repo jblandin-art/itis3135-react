@@ -6,5 +6,6 @@ export default function Header() {
     <h1 id="h1">Josiah Blanding's Jagged Bat | ITIS 3135</h1>
            <Nav />
         </header>
+        
     )
 }
