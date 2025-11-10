@@ -11,7 +11,7 @@ export default function Introduction(){
         <>
 
         <Helmet>
-            <title>Josiah Blanding's Jagged Bat | ITIS 3135 | Contract</title> 
+            <title>Josiah Blanding's Jagged Bat | ITIS3135 | Contract</title> 
             </Helmet>
 
 

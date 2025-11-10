@@ -7,7 +7,7 @@ export default function App() {
   return (
     <> {/* These are called fragments */}
     <Helmet>
-    <title>Josiah Blanding's Jagged Bat | ITIS 3135 | Home</title> 
+    <title>Josiah Blanding's Jagged Bat | ITIS3135 | Home</title> 
     </Helmet>
     <main>
       <h2>Home</h2>

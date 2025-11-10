@@ -13,7 +13,7 @@ useEffect(() => {
         <>
 
         <Helmet>
-            <title>Josiah Blanding's Jagged Bat | ITIS 3135 | Introduction</title> 
+            <title>Josiah Blanding's Jagged Bat | ITIS3135 | Introduction</title> 
             </Helmet>
         
         <main>
