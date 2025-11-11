@@ -1,17 +1,17 @@
 export default function Footer(){
     return (
         <footer>
-      <nav>
-    <a href="https://webpages.charlotte.edu/jblandin/" target="_blank">Charlotte Webpages</a>|
-    <a href="https://github.com/jblandin-art" target="_blank">GitHub</a>|
-    <a href="https://jblandin-art.github.io/" target="_blank">GitHub.io</a>|
-    <a href="https://www.freecodecamp.org/pubstomperinrome" target="_blank">freeCodeCamp</a>|
-    <a href="https://www.codecademy.com/profiles/pubstomperinrome" target="_blank">Codecademy</a>|
-    <a href="https://www.linkedin.com/in/josiah-blanding-26190b37b/" target="_blank">LinkedIn</a>|
-    <a href="./" target="_blank">ITIS3135</a>
-</nav>
-<p>© 2025 Josiah Blanding</p>
-<p class="designed-by"><a href="https://webpages.charlotte.edu/jblandin/itis3135/designedbyjosiah.com/index.html" target="_blank">designedbyjosiah</a></p>
-    </footer>
+            <nav>
+                <a href="https://webpages.charlotte.edu/jblandin/" target="_blank">Charlotte Webpages</a><span className="divider">|</span>{" "}
+                <a href="https://github.com/jblandin-art" target="_blank">GitHub</a><span className="divider">|</span>{" "}
+                <a href="https://jblandin-art.github.io/" target="_blank">GitHub.io</a><span className="divider">|</span>{" "}
+                <a href="https://www.freecodecamp.org/pubstomperinrome" target="_blank">freeCodeCamp</a><span className="divider">|</span>{" "}
+                <a href="https://www.codecademy.com/profiles/pubstomperinrome" target="_blank">Codecademy</a><span className="divider">|</span>{" "}
+                <a href="https://www.linkedin.com/in/josiah-blanding-26190b37b/" target="_blank">LinkedIn</a><span className="divider">|</span>{" "}
+                <a href="./" target="_blank">ITIS3135</a>
+            </nav>
+            <p>© 2025 Josiah Blanding</p>
+            <p className="designed-by"><a href="https://webpages.charlotte.edu/jblandin/itis3135/designedbyjosiah.com/index.html" target="_blank">designedbyjosiah</a></p>
+        </footer>
     )
 }
