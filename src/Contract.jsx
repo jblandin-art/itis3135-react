@@ -3,7 +3,7 @@ import { useEffect } from "react";
 export default function Introduction(){
     useEffect(() => {
         // Set document title as a fallback
-        document.title = "Josiah Blanding's Jagged Bat | ITIS 3135 | Contract";
+        document.title = "Josiah Blanding's Jagged Bat | ITIS3135 | Contract";
       }, []); // empty dependency → runs once on mount
 
 

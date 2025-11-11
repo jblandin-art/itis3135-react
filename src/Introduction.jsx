@@ -6,7 +6,7 @@ export default function Introduction(){
 
 useEffect(() => {
     // Set document title as a fallback
-    document.title = "Josiah Blanding's Jagged Bat | ITIS 3135 | Introduction";
+    document.title = "Josiah Blanding's Jagged Bat | ITIS3135 | Introduction";
   }, []); // empty dependency → runs once on mount
 
     return(
