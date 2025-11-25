@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route, HashRouter} from "react-router-dom";
 import Introduction from "./Introduction.jsx"
 import Contract from "./Contract.jsx"
 import Layout from "./Layout.jsx"
+import ClassIntros from "./ClassIntros.jsx"
 import { HelmetProvider } from "react-helmet-async";
 
 
@@ -18,6 +19,7 @@ createRoot(document.getElementById('root')).render(
       <Route index element={<App />}/>
       <Route path="introduction" element={<Introduction />}/>
       <Route path="contract" element={<Contract />}/>
+      <Route path="ClassIntros" element={<ClassIntros />}/>
       </Route>
     </Routes>
     </HashRouter>

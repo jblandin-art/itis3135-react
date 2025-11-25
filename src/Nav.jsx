@@ -4,7 +4,8 @@ export default function() {
         <nav>
             <a href="./">Home</a><span className="divider">|</span>{" "}
             <a href="#/introduction">Introduction</a><span className="divider">|</span>{" "}
-            <a href="#/contract">Contract</a>
+            <a href="#/contract">Contract</a><span className="divider">|</span>{" "}
+            <a href="#/ClassIntros">Class Intros</a>
         </nav>
         <nav className="secondary-nav">
             <a href="https://webpages.charlotte.edu/jblandin/itis3135/jaggedbat.com/" target="_blank" rel="noreferrer noopener">Jagged Bat</a><span className="divider">|</span>{" "}
