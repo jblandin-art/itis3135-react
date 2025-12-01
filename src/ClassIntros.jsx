@@ -4,7 +4,7 @@ export default function ClassIntros(){
 
 useEffect(() => {
     // Set document title as a fallback
-    document.title = "Josiah Blanding's Jagged Bat | ITIS3135 | Introduction";
+    document.title = "Josiah Blanding's Jagged Bat | ITIS3135 | Everybody's Introduction";
   }, []); // empty dependency → runs once on mount
     const [introductionData, setIntroductionData] = useState([]);
     const [error, setError] = useState(null);
